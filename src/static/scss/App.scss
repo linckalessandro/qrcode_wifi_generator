@@ -42,8 +42,9 @@
             width: 100%;
 
             .form-field, .form-field input{
-                width: 500px;
+                width: 100%;
                 min-width: 100px;
+                max-width: 500px;
                 font-family: 'Space Mono';
                 font-family: 14px;
             }
@@ -70,11 +71,12 @@
         .content{
 
             .content-form{
-    
+
                 .form-field{
                     width: 100% ;
                 }
             }
         }
     }
-  }
+}
+
