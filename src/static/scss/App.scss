@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../fonts/SpaceMono-Regular.ttf') format('truetype');
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+
+        h1{
+            font-size: 45px;
+            text-align: center;
+            font-family: 'Space Mono';
+        }
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 30px;
+        overflow: auto;
+
+        .content-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            .form-field, .form-field input{
+                width: 500px;
+                min-width: 100px;
+                font-family: 'Space Mono';
+                font-family: 14px;
+            }
+
+            button{
+                font-family: 'Space Mono';
+                background-color: #2185d0;
+                color: white;
+            }
+
+            button:hover{
+                background-color: #155d94; 
+            }
+        }
+
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+
+        .content{
+
+            .content-form{
+    
+                .form-field{
+                    width: 100% ;
+                }
+            }
+        }
+    }
+  }
